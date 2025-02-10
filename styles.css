@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Toolbar (dark background, centered at the top) */
+#translationToolbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a1a;
+    padding: 8px 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+  }
+
+  /* Toolbar buttons */
+  #translationToolbar button {
+    background: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  #translationToolbar button:hover {
+    background: #555;
+  }
+
+  /* Toolbar icon styles */
+  .btn-icon {
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+  }
+
+  /* Text in toolbar buttons */
+  .btn-text {
+    display: inline-block;
+  }
+
+  /* Selection box */
+  .selection-box {
+    position: absolute;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10000;
+  }
+
+  /* Translation result view (fixed below toolbar) */
+  #translationResult {
+    position: fixed;
+    top: 70px; /* Adjust if toolbar height changes */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background: #2c2c2c;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10001;
+  }
+
+  /* Result header (title and buttons) */
+  #translationResult .result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  #translationResult .result-title {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  /* Result buttons (copy and close) */
+  #translationResult .result-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #fff;
+    pointer-events: auto;
+  }
+
+  #translationResult .result-buttons button:hover {
+    opacity: 0.8;
+  }
+
+  /* Icon styles for result view */
+  .result-icon {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  /* Result content styling */
+  #translationResult .result-content {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.4;
+  }
