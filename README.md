@@ -1,2 +1,2 @@
 # Translater-Extension
-A gogole chrome extension for better translation experience
+A google chrome extension for better translation experience
